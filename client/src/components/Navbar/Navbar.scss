@@ -90,7 +90,27 @@
     right: 0;
     height: 100vh;
     width: 80%;
-    z-index: 5;
-    background: white;
+    padding: 1rem;
+    background: url('../../assets/bgWhite.png');
+    background-size: cover;
+    background-repeat: repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    background-color:var(--white-color);
+    box-shadow: 0 0 20px rgba(168, 168, 168, 0.15);
+
+    svg{
+        width: 35px;
+        height: 35px;
+        color: var(--secondary-color);
+    }
+    ul {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        width: 100%;
+        
+    }
   }
 }
