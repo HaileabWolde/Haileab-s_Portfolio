@@ -9,8 +9,8 @@ const Navbar = ()=> {
       </div>
       <ul className='app__navbar-links'>
         {
-          ['home', 'about', 'works', 'skills', 'contact'].map((item)=> (
-            <li key={`link-${item}`} className=' p-text'>
+          ['Home', 'About', 'Works', 'Skills', 'Contact'].map((item)=> (
+            <li key={`link-${item}`} className=''>
               <div/>
               <a href={`#${item}`}>{item}</a>
             </li>
