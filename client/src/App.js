@@ -1,16 +1,17 @@
 import React from 'react'
 import {About, Footer, Header, Skills, Testimonals, Work} from './container'
+import { Navbar } from './components';
 const App = ()=> {
   return (
-    <>
-    <Header/>
+   <div className='app'>
+    <Navbar/>
+     <Header/>
     <About/>
+    <Work/>
     <Skills/>
     <Testimonals/>
-    <Work/>
     <Footer/>
-    </>
-    
+   </div>
   );
 }
 
