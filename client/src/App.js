@@ -1,8 +1,16 @@
+import React from 'react'
+import {About, Footer, Header, Skills, Testimonals, Work} from './container'
 const App = ()=> {
   return (
-   <div>
-    <h1>Hello World</h1>
-   </div>
+    <>
+    <Header/>
+    <About/>
+    <Skills/>
+    <Testimonals/>
+    <Work/>
+    <Footer/>
+    </>
+    
   );
 }
 
