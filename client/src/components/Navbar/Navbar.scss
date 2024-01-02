@@ -70,7 +70,7 @@
     }
 }
 .app__navbar-menu {
-   
+ cursor: pointer;
   width: 35px;
   height: 35px;
   border-radius: 50%;
@@ -85,6 +85,7 @@
     height: 20px;
   }
   div{
+   
     position: fixed;
     top: 0;
     right: 0;
@@ -103,14 +104,35 @@
     svg{
         width: 35px;
         height: 35px;
+        cursor: pointer;
         color: var(--secondary-color);
     }
     ul {
+        list-style: none;
         display: flex;
         flex-direction: column;
         align-items: start;
         width: 100%;
+
+        li{
+            margin: 1rem;
+         
+
+            a {
+                text-decoration: none;
+                text-transform: uppercase;
+                color: var(--gray-color);
+                font-weight: 500;
+                &:hover {
+                    color: var(--secondary-color)
+                }
+                transition: all 0.3s ease-in-out;
+            }
+        }
         
+    }
+    @media  screen and (min-width: 900px) {
+        display: none;
     }
   }
 }
