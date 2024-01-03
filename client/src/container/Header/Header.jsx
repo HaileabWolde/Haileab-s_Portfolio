@@ -1,6 +1,7 @@
 import './Header.scss'
 import React, {useState} from 'react'
 import {motion} from "framer-motion"
+import {images} from '../../constants'
 const Header = ()=>{
     return (
         <div className='app__header app__flex'>
@@ -25,6 +26,23 @@ const Header = ()=>{
                 </div>
             </div>
             </motion.div>  
+            <motion.div
+             whileInView={{opacity: [0, 1]}}
+             transition={{duration: 0.6 , delayChildren: 10}}
+             className='app__header-img'
+            >
+                <img src={images.PhotoOne} alt="Haileab"></img>
+                <motion.img
+                whileInView={{scale: [0, 1]}}
+                transition={{duration: 1, ease: 'easeInOut'}}
+                src={images.circle}
+                className='overlay_circle'
+                alt="profile_circle"
+                />
+            </motion.div>
+            <motion.div>
+
+            </motion.div>
         </div>
     )
 }
