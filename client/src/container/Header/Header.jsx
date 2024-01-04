@@ -3,12 +3,19 @@ import React, {useState} from 'react'
 import {motion} from "framer-motion"
 import {images} from '../../constants'
 const Header = ()=>{
+    const scaleVariants = {
+        whileInView: {
+            scale: [0, 1],
+            opacity: [0, 1],
+        },
+        transition: {duration: 1, ease: 'easeInOut'},
+    }
     return (
-        <div className='app__header app__flex'>
+        <div id='home' className='app__header app__flex'>
           <motion.div
           whileInView={{x:[-100, 0], opacity: [0, 1]}}
           transition={{duration: 0.6}}
-          className='app_header-info'
+          className='app__header-info'
           >
             <div className='app__header-badge'>
                 <div className='badge-cmp app__flex'>
@@ -40,7 +47,19 @@ const Header = ()=>{
                 alt="profile_circle"
                 />
             </motion.div>
-            <motion.div>
+            <motion.div
+            variants={scaleVariants}
+            whileInView={scaleVariants.whileInView}
+            transition={scaleVariants.transition}
+            className='app__header-circles'
+            >
+                {
+                    [images.flutter, images.redux, images.sass].map((circle, index)=> (
+                        <div>
+                            <img src={circle} alt='circle'/>
+                        </div>
+                    ))
+                }
 
             </motion.div>
         </div>
