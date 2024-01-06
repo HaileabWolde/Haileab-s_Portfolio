@@ -20,9 +20,14 @@
   }
   
   .app__flex {
+    
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  .aboutWork{
+    width: 100%;
+
   }
   
   .app__wrapper {
@@ -37,13 +42,13 @@
   }
   
   .copyright {
-    width: 100%;
+    height: 100vh;
     padding: 2rem 0 0;
   
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    align-items: flex-end;
+   align-items: flex-end;
   
     p {
       text-transform: uppercase;

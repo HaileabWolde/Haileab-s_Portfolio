@@ -2,6 +2,7 @@ import './About.scss'
 import { useState, useEffect } from 'react'
 import {motion} from "framer-motion"
 import { urlFor, client } from '../../client'
+import { AppWrapper } from '../../wrapper'
 const About = ()=>{
     const [abouts, setAbouts] = useState([])
 
@@ -13,7 +14,7 @@ const About = ()=>{
         })
     }, [])
     return (
-    <div style={{marginTop: '30px'}}>
+    <div style={{marginTop: '30px'}} className='aboutWork'>
          <h2 className='head-text'>I Know <span>Good Development</span> <br/> Means <span> Good Application</span>
     </h2>
     <div className='app__profile'>
@@ -37,4 +38,4 @@ const About = ()=>{
     </div>
     )
 }
-export default About
+export default AppWrapper(About, 'about', 'aboutWork')
