@@ -23,7 +23,7 @@ const Work = ()=>{
             setAnimateCard([{ scale: 1}])
         }, 800)
 
-        setFilterworks(works.filter((work)=> work.tags.includes(item)))
+        setFilterworks(works.filter((work)=> (work.tags.find((single)=> single === item))))
     }
 
     useEffect(()=>{
