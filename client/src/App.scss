@@ -14,9 +14,8 @@
   .app__container {
     width: 100%;
     min-height: 100vh;
-  
     display: flex;
-    flex-direction: row;
+   
   }
   
   .app__flex {
@@ -27,6 +26,7 @@
   }
   .aboutWork{
     width: 100%;
+    min-height: 70vh;
     justify-content: space-between;
   }
  

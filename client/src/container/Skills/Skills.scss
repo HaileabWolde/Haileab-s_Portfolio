@@ -1,0 +1,32 @@
+.skill{
+    margin-top: 2rem;
+}
+.skill-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1rem;
+    @media screen and (max-width: 1200px) {
+        padding: 3rem;
+    }
+}
+.skill-info{
+    margin: 1rem;
+}
+.skill-info-div{
+    background-color: #fff;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    img{
+        width: 50%;
+        height: 50%;
+    }
+}
