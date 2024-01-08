@@ -13,7 +13,15 @@
     }
 }
 .skill-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin: 1rem;
+    p{
+        margin-top: 0.5rem;
+        font-weight: 500;
+    }
 }
 .skill-info-div{
     background-color: #fff;
@@ -28,5 +36,16 @@
     img{
         width: 50%;
         height: 50%;
+    }
+    &:hover{
+        box-shadow: 0 0 25px #fef4f5;
+    }
+    @media screen and (min-width: 2000px){
+        width: 150px;
+        height: 150px;
+    }
+    @media screen and (max-width: 1200px){
+        width: 70px;
+        height: 70px;
     }
 }

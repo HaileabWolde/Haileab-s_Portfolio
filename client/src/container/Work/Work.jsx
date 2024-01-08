@@ -3,7 +3,7 @@ import {AiFillEye} from 'react-icons/ai'
 import { FaGithub } from "react-icons/fa6";
 import { motion } from 'framer-motion'
 
-import {AppWrapper} from '../../wrapper'
+import {AppWrapper, Motionwrapper} from '../../wrapper'
 import {urlFor, client} from '../../client'
 import './Work.scss'
 
@@ -104,4 +104,6 @@ const Work = ()=>{
         </div>
     )
 }
-export default AppWrapper(Work, 'works', 'aboutWork')
+export default AppWrapper(
+    Motionwrapper(Work, 'aboutWork'), 
+    'works', 'aboutWork')

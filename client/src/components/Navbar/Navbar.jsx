@@ -33,7 +33,7 @@ const Navbar = ()=> {
              <HiX onClick={()=> setToggle(false)}/>
              <ul>
              {
-          ['home', 'about', 'works', 'skills', 'Contact'].map((item)=> (
+          ['home', 'about', 'works', 'skills', 'contact'].map((item)=> (
             <li key={`${item}`} >
               <a href={`#${item}`} onClick={()=> setToggle(false)}>{item}</a>
             </li>

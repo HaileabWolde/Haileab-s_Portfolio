@@ -2,7 +2,7 @@ import './About.scss'
 import { useState, useEffect } from 'react'
 import {motion} from "framer-motion"
 import { urlFor, client } from '../../client'
-import { AppWrapper } from '../../wrapper'
+import { AppWrapper, Motionwrapper } from '../../wrapper'
 const About = ()=>{
     const [abouts, setAbouts] = useState([])
 
@@ -38,4 +38,5 @@ const About = ()=>{
     </div>
     )
 }
-export default AppWrapper(About, 'about', 'aboutWork')
+export default AppWrapper(
+    Motionwrapper(About, 'aboutWork'), 'about', 'aboutWork')

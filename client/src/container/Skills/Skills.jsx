@@ -30,6 +30,7 @@ const Skills = ()=>{
                       >
                         <img src={urlFor(skill.icon)}/>
                       </motion.div>
+                      <p className='p-text'>{skill.name}</p>
                         </div>
                 ))
             }
