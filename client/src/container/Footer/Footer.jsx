@@ -1,10 +1,24 @@
-import React from 'react'
+import React, {useState} from 'react'
 import { images } from '../../constants'
 import './Footer.scss'
 import { AppWrapper, Motionwrapper } from '../../wrapper'
 const Footer = ()=>{
+    const [FormData, setFormData] = useState({
+        Name: '',
+        Email: '',
+        Messages: ''
+    })
+    const handleChange = (e)=> {
+        setFormData(
+            {
+                ...FormData,
+                [e.target.name] : e.target.value
+            }
+        )
+    }
+    console.log(FormData)
     return (
-        <div style={{backgroundColor: '#fff'}}>
+        <div  className="MAIN" style={{backgroundColor: '#fff'}}>
             <h1 className='head-text'>Contact with <span> me <span></span></span></h1>
             <div className='Footer'>
                 <div className='Footer-One'>
@@ -16,6 +30,39 @@ const Footer = ()=>{
                     <a href="tel:0992621400" className="p-text">0992621400</a>
                 </div>
             </div>
+            <form className='InputField'>
+                <div>
+                  <input
+                  placeholder='Your Name'
+                  type='text'
+                  name='Name'
+                  value={FormData.Name}
+                  onChange={(e)=> handleChange(e)}
+                  />
+                </div>
+                <div>
+                <input
+                  placeholder='Your Email'
+                  type='email'
+                  name='Email'
+                  value={FormData.Email}
+                  onChange={(e)=> handleChange(e)}
+                  /> 
+                </div>
+                <div>
+                <textarea
+                  placeholder='Your Messages'
+                  type='text'
+                  name='Messages'
+                  value={FormData.Messages}
+                  onChange={(e)=> handleChange(e)}
+                  /> 
+                </div>
+                <button>
+                    Send Message
+                </button>
+            </form>
+           
         </div>
     )
 }
