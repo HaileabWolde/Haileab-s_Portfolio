@@ -12,6 +12,10 @@
     display: flex;
     justify-content: center;
     align-items: center; 
+
+    @media screen and (max-width: 1200px){
+       flex-wrap: wrap;
+    }
 }
 .Footer-One{
     display: flex;
@@ -27,6 +31,12 @@
         width: 40px;
        height: 60%;
     }
+    @media screen and (max-width: 1200px){
+      margin-left: 0rem;
+      margin-right: 0rem;
+      margin-top: 1rem;
+      margin-bottom: 1rem
+     }
 }
 .Footer-Two{
     border-radius: 10px;
@@ -40,6 +50,10 @@
         width: 40px;
        height: 60%;
     }
+    @media screen and (max-width: 1200px){
+        margin-left: 0rem;
+        margin-right: 0rem;
+       }
 }
 .InputField{
     width: 60%;
@@ -93,5 +107,11 @@
         &:hover {
             background-color: #2430af;
           }
+          @media screen and (max-width: 1200px){
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
     }
 }

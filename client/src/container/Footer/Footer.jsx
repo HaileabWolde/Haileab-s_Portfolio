@@ -49,7 +49,7 @@ const Footer = ()=>{
             </div>
             {
                 fillForm ?  (
-                    <h4 className='head-text '>Thank You For Your Message</h4>
+                    <h4 className='head-text '> Thank you for getting in touch!</h4>
                  )
                  : (
                     <form className='InputField' onSubmit={handleSubmit}>
@@ -83,7 +83,7 @@ const Footer = ()=>{
                     </div>
                     <button type='submit'>
                        {
-                        isloading ? 'Sending Message ...' : 'Send Message'
+                        isloading ? 'Sending...' : 'Send Message'
                        }
                     </button>
                 </form>
