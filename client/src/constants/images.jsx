@@ -36,7 +36,9 @@ import skype from '../assets/skype.png';
 import spotify from '../assets/spotify.png';
 import Haileab from '../assets/Haileab.png'
 import Photo from '../assets/Photo.png'
-import PhotoOne from '../assets/PhotoOne.png'
+import PhotoOne from '../assets/PhotoOne.png';
+import MYLOGO from '../assets/MYLOGO.png';
+import MYLOGOONE from '../assets/MYLOGOONE.png'
 export default {
   email,
   mobile,
@@ -71,5 +73,7 @@ export default {
   nb,
   skype,
   spotify,
-  PhotoOne
+  PhotoOne,
+  MYLOGO,
+  MYLOGOONE
 };

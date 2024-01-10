@@ -54,7 +54,7 @@ const Header = ()=>{
             className='app__header-circles'
             >
                 {
-                    [images.flutter, images.redux, images.sass].map((circle, index)=> (
+                    [images.react, images.redux, images.node].map((circle, index)=> (
                         <div>
                             <img src={circle} alt='circle'/>
                         </div>
